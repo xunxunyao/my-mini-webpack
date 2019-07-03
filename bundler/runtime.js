@@ -7,16 +7,16 @@
     return module.exports
   }
 
-  let chunkResolves = {};
+  // let chunkResolves = {};
 
-  window.requireJsonp = function(chunkId, newModules) {
-    for (const id in newModules) {
-      modules[id] = newModules[id]
-      chunkResolves[chunkId]();
-    }
-  }
+  // window.requireJsonp = function(chunkId, newModules) {
+  //   for (const id in newModules) {
+  //     modules[id] = newModules[id]
+  //     chunkResolves[chunkId]();
+  //   }
+  // }
   __require__(0)
-})([
+})(
   // {
   //   [mododuleId]: codeFunction
   // }
@@ -38,4 +38,4 @@
       }
     })
   }
-])
+)
