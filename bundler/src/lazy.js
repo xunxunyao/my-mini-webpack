@@ -1,3 +1,5 @@
-import big from './big'
-const lazy = big("lazy loaded!")
-export default lazy
+(function(__require__, exports) {
+  let X = __require__(1)
+  const lazy = big("lazy loaded!")
+  exports.default  = lazy
+})
